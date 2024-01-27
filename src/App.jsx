@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
-import { About, Contact, Hero, Navbar, Tech, Works, StarsCanvas, AppWrap, SocialMedia } from "./components";
+import { About, Contact, Hero, Navbar, Tech, Projects, StarsCanvas, AppWrap, SocialMedia } from "./components";
 
 const App = () => {
   const appStyle = {
@@ -16,10 +16,8 @@ const App = () => {
         <div className='relative z-0' style={appStyle}>
           <About />
           <Tech />
-          <Works />
+          <Projects />
           <Contact />
-          <SocialMedia />
-          <AppWrap />
         </div>
       </div>
     </BrowserRouter>

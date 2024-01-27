@@ -66,10 +66,10 @@ const Contact = () => {
 
   return (
     <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse overflow-hidden`}
+      className={`flex flex-col overflow-hidden`}
     >
       <motion.div
-        variants={slideIn("left", "tween", 0.2, 1)}
+        variants={slideIn("left", "tween", 0.5, 0.75)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
         <p className={styles.sectionSubText}>Get in touch</p>
@@ -121,6 +121,14 @@ const Contact = () => {
             {loading ? "Sending..." : "Send"}
           </button>
         </form>
+      </motion.div>
+
+      <motion.div
+        variants={slideIn("left", "tween", 0.2, 0.1)}
+        className="flex overflow-hidden flex-col mt-12 gap-8"
+      >
+        <SocialMedia />
+        <AppWrap />
       </motion.div>
     </div>
   );
