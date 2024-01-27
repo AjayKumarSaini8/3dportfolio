@@ -1,8 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
 import { styles } from "../styles";
-import { StarsCanvas } from "./canvas";
-import { AppWrap, SocialMedia } from ".";
+import { SocialMedia } from ".";
 
 const Hero = () => {
   return (
@@ -29,8 +28,6 @@ const Hero = () => {
           <SocialMedia />
         </div>
       </div>
-
-      <StarsCanvas />
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
