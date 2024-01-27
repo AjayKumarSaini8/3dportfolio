@@ -24,11 +24,9 @@ const Hero = () => {
             <span className='text-[#915EFF]'>Turning Vision Into Reality With Code</span>
           </p>
           <Link to="https://www.linkedin.com/in/ajaykumar-saini-914534245/">
-            <button class="px-4 py-2 mt-5 rounded-lg bg-purple-900 hover:shadow-purple-900 text-white hover:scale-125">Hire ME, Linkedin!</button>
+            <button className="px-4 py-2 mt-5 rounded-lg bg-purple-900 hover:shadow-purple-900 text-white hover:scale-125">Hire ME, Linkedin!</button>
           </Link>
           <SocialMedia />
-
-
         </div>
       </div>
 

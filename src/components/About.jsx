@@ -39,7 +39,7 @@ const About = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className="text-4xl font-semibold"> I Know That <span className='text-[#915EFF]'>Good Developer</span></p>
-        <p className="text-4xl pl-10 font-semibold"> Means  <span className='text-[#915EFF]'>Good Business</span></p>
+        <p className="text-4xl font-semibold"> Means  <span className='text-[#915EFF]'>Good Business</span></p>
       </motion.div>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
