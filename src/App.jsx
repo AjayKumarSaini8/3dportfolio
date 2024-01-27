@@ -9,19 +9,15 @@ const App = () => {
 
   return (
     <BrowserRouter>
-      <div className='relative z-0'>
-        <Navbar />
-        <Hero />
-        <StarsCanvas />
-        <div className='relative z-0' style={appStyle}>
-          <About />
-          <Tech />
-          <Works />
-          <Contact />
-          <SocialMedia />
-          <AppWrap />
-        </div>
-      </div>
+      <Navbar />
+      <Hero />
+      <StarsCanvas />
+      <About />
+      <Tech />
+      <Works />
+      <Contact />
+      <SocialMedia />
+      <AppWrap />
     </BrowserRouter>
   );
 };
