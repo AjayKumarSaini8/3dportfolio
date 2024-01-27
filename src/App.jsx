@@ -10,22 +10,16 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className='relative z-0'>
-        <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
-          <Navbar />
-          <Hero />
-          <StarsCanvas />
-        </div>
-
+        <Navbar />
+        <Hero />
+        <StarsCanvas />
         <div className='relative z-0' style={appStyle}>
           <About />
           <Tech />
           <Works />
           <Contact />
           <SocialMedia />
-          <div className='relative z-0'>
-          </div>
           <AppWrap />
-
         </div>
       </div>
     </BrowserRouter>
