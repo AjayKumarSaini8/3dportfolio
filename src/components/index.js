@@ -5,7 +5,6 @@ import About from "./About";
 import Tech from "./Tech";
 import Projects from "./Projects";
 import Contact from "./Contact";
-import CanvasLoader from "./Loader";
 import SocialMedia from './SocialMedia';
 import AppWrap from './AppWrap';
 
@@ -18,6 +17,5 @@ export {
   Tech,
   Projects,
   Contact,
-  CanvasLoader,
   BallCanvas,
 };

@@ -5,8 +5,6 @@ import {
   useTexture,
 } from "@react-three/drei";
 
-import CanvasLoader from "../Loader";
-
 const Ball = (props) => {
   const [decal] = useTexture([props.imgUrl]);
 
@@ -28,7 +26,7 @@ const Ball = (props) => {
 const BallCanvas = ({ icon }) => {
   return (
     <Canvas>
-      <Suspense fallback={<CanvasLoader />}>
+      <Suspense >
         <Ball imgUrl={icon} />
       </Suspense>
     </Canvas>
