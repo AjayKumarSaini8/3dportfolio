@@ -22,6 +22,9 @@ import threejs from "./tech/threejs.svg";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import movies from './movies.png'
+import virtual from './virtual.png'
+import amazon from './amazon.png'
 
 export {
   logo,
@@ -46,4 +49,7 @@ export {
   carrent,
   jobit,
   tripguide,
+  movies,
+  virtual,
+  amazon,
 };

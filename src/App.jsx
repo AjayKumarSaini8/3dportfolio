@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
-
-import { About, Contact, Hero, Navbar, Tech, Works } from "./components";
+import { About, Contact, Hero, Navbar, Tech, Works, StarsCanvas, AppWrap, SocialMedia } from "./components";
 
 const App = () => {
   const appStyle = {
@@ -10,16 +9,23 @@ const App = () => {
 
   return (
     <BrowserRouter>
-      <div className='relative z-0' style={appStyle}>
+      <div className='relative z-0'>
         <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
           <Navbar />
           <Hero />
+          <StarsCanvas />
         </div>
-        <About />
-        <Tech />
-        <Works />
-        <div className='relative z-0'>
+
+        <div className='relative z-0' style={appStyle}>
+          <About />
+          <Tech />
+          <Works />
           <Contact />
+          <SocialMedia />
+          <div className='relative z-0'>
+          </div>
+          <AppWrap />
+
         </div>
       </div>
     </BrowserRouter>

@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
-
+import { Link } from 'react-router-dom';
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
+import { StarsCanvas } from "./canvas";
+import { AppWrap, SocialMedia } from ".";
 
 const Hero = () => {
   return (
@@ -22,10 +23,16 @@ const Hero = () => {
             I'm Web Developer <br className='sm:block ' />
             <span className='text-[#915EFF]'>Turning Vision Into Reality With Code</span>
           </p>
+          <Link to="https://www.linkedin.com/in/ajaykumar-saini-914534245/">
+            <button class="px-4 py-2 mt-5 rounded-lg bg-purple-900 hover:shadow-purple-900 text-white hover:scale-125">Hire ME, Linkedin!</button>
+          </Link>
+          <SocialMedia />
+
+
         </div>
       </div>
 
-      <ComputersCanvas />
+      <StarsCanvas />
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>

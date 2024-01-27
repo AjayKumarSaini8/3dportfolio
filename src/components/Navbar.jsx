@@ -51,8 +51,8 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
-          <p className='text-white text-[18px] font-bold cursor-pointer flex '>
+          <img src={logo} alt='logo' className='w-9 h-9 object-contain hover:scale-125' />
+          <p className='text-white text-[18px] font-bold cursor-pointer flex'>
             Ajaykumar Saini &nbsp;
             <span className='sm:block hidden'> | Portfolio</span>
           </p>
@@ -63,7 +63,7 @@ const Navbar = () => {
             <li
               key={nav.id}
               className={`${active === nav.title ? "text-white" : "text-secondary"
-                } hover:text-white text-[18px] font-medium cursor-pointer`}
+                } hover:text-white text-[18px] font-medium cursor-pointer hover:scale-125`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
@@ -80,14 +80,14 @@ const Navbar = () => {
           />
 
           <div
-            className={`${!toggle ? "hidden" : "flex backdrop-blur-lg"
-              } p-6 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+            className={`${!toggle ? "hidden" : "flex"
+              } p-6 hover:shadow-lg bg-black hover:shadow-black absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
           >
             <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
-                  className={`font-poppins font-medium cursor-pointer text-[16px] ${active === nav.title ? "text-white" : "text-secondary"
+                  className={`font-poppins font-medium hover:scale-125 cursor-pointer text-[16px] ${active === nav.title ? "text-white" : "text-secondary"
                     }`}
                   onClick={() => {
                     setToggle(false); // Close the hamburger menu

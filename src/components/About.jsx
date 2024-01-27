@@ -2,7 +2,6 @@ import React from "react";
 import Tilt from 'react-parallax-tilt'
 import { motion } from "framer-motion";
 
-import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -39,19 +38,15 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <p className="text-4xl font-semibold"> I Know That <span className='text-[#915EFF]'>Good Developer</span></p>
+        <p className="text-4xl pl-10 font-semibold"> Means  <span className='text-[#915EFF]'>Good Business</span></p>
       </motion.div>
-
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-gray-900 text-[17px] max-w-3xl leading-[30px]'
       >
         I'm a skilled software developer with expertise in Python, JavaScript
         and frameworks like React and Django.
-        I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

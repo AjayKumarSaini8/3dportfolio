@@ -16,6 +16,9 @@ import {
   carrent,
   jobit,
   tripguide,
+  movies,
+  virtual,
+  amazon,
 } from "../assets";
 
 export const navLinks = [
@@ -28,12 +31,12 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "work",
-    title: "Work",
-  },
-  {
     id: "skills",
     title: "Skills",
+  },
+  {
+    id: "work",
+    title: "Work",
   },
   {
     id: "contact",
@@ -166,6 +169,69 @@ const projects = [
     ],
     image: tripguide,
     source_code_link: "https://github.com/AjayKumarSaini8/used-car-price-prediction.git",
+  },
+  {
+    name: "Movies Recommendation",
+    description:
+      "A system that provides personalized movie recommendations to users based on their preferencesr.",
+    tags: [
+      {
+        name: "Jupyter",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Python",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Pandas",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: movies,
+    source_code_link: "https://github.com/AjayKumarSaini8/movie-recommendation-engine.git",
+  },
+  {
+    name: "Virtal Dressing Room",
+    description:
+      "This project leverages AR or VR technologies to enhance the shopping experience.",
+    tags: [
+      {
+        name: "OpenCV",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Python",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Firebase",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: virtual,
+    source_code_link: "https://github.com/AjayKumarSaini8/virtual-dressing-room.git",
+  },
+  {
+    name: "Amazon Clone",
+    description:
+      "Provides a eCommerce marketplace via which the users can communicate buy products.",
+    tags: [
+      {
+        name: "JavaScript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "HTML",
+        color: "green-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: amazon,
+    source_code_link: "https://github.com/AjayKumarSaini8/amazon-clone.git",
   },
 ];
 
