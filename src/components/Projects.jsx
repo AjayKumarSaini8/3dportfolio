@@ -6,6 +6,7 @@ import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
+import { slideIn } from "../utils/motion";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
@@ -42,16 +43,14 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
 const Projects = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} text-sm sm:text-base`}>My work</p>
-        <h2 className={`${styles.sectionHeadText} text-lg sm:text-2xl`}>Projects.</h2>
+      <motion.div variants={slideIn("left", "tween", 0.5, 0.75)}>
+        <p className={`${styles.sectionSubText} text-sm `}>My work</p>
+        <h2 className={`${styles.sectionHeadText} text-lg pt-8 pb-7`}>Projects.</h2>
       </motion.div>
 
-      <div className='w-full flex'>
-        <motion.p variants={fadeIn("", "", 0.1, 1)} className='mt-3 text-gray-900 text-sm sm:text-base max-w-md leading-normal'>
-          Following projects showcase my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos. They reflect my ability to solve complex problems, work with different technologies, and manage projects effectively.
-        </motion.p>
-      </div>
+      <motion.div variants={slideIn("left", "tween", 0.5, 0.75)} className='mt-3 text-gray-900 text-sm sm:text-base max-w-md leading-normal'>
+        Following projects showcase my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos. They reflect my ability to solve complex problems, work with different technologies, and manage projects effectively.
+      </motion.div>
 
       <div className='mt-10 sm:mt-20 flex flex-wrap gap-5 sm:gap-7'>
         {projects.map((project, index) => (
