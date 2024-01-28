@@ -37,9 +37,9 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "Ajaykumar Saini",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "sainiajaykumar716@gmail.com",
           message: form.message,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
@@ -69,7 +69,7 @@ const Contact = () => {
       className={`flex flex-col overflow-hidden`}
     >
       <motion.div
-        variants={slideIn("left", "tween", 0.5, 0.75)}
+        variants={slideIn("left", "tween", 0.2, 0.5)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
         <p className={styles.sectionSubText}>Get in touch</p>

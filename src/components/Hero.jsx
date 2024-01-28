@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
 import { styles } from "../styles";
 import { SocialMedia } from ".";
+import { SectionWrapper } from "../hoc";
 
 const Hero = () => {
   return (
@@ -50,4 +51,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default SectionWrapper(Hero, "home");
