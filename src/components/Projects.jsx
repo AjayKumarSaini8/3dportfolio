@@ -17,14 +17,16 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+      className='shadow-purple-800 hover:shadow-purple-500 rounded-[50px] shadow-card'
+    >
       <Tilt
         options={{
           max: 45,
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-full md:w-[360px] w-full"
+        className="bg-blur  p-5  sm:w-full md:w-[360px] w-full bg-blur bg-white/5 rounded-[50px] py-5 px-5 min-h-[280px] flex-row"
       >
         <div className="relative w-full h-[230px] sm:h-[180px]">
           <img
@@ -78,7 +80,7 @@ const Projects = () => {
       <div className="w-full flex">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-secondary text-base sm:text-sm max-w-3xl leading-[30px]"
+          className="mt-3 text-secondary text-base sm:text-sm max-w-3xl"
         >
           Following projects showcase my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.
         </motion.p>

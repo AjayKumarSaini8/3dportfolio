@@ -1,25 +1,20 @@
-import React from "react";
 import { BrowserRouter } from "react-router-dom";
-import { About, Contact, Hero, Navbar, Tech, Projects } from "./components";
+import { About, Contact, Hero, Navbar, Tech, Projects, StarsCanvas } from "./components";
 
 const App = () => {
-  const appStyle = {
-    backgroundColor: "#ccd8e3", // Set the desired background color
-  };
 
   return (
     <BrowserRouter>
-      <div className='relative z-0 bg-black'>
+      <div className='relative z-0'>
         <Navbar />
         <Hero />
-        <div className='relative z-0' style={appStyle}>
-          <About />
-          <Tech />
-          <Projects />
-          <Contact />
-        </div>
+        <About />
+        <Tech />
+        <Projects />
+        <Contact />
+        <StarsCanvas />
       </div>
-    </BrowserRouter>
+    </BrowserRouter >
   );
 };
 

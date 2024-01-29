@@ -54,7 +54,6 @@ const Navbar = () => {
           <img src={logo} alt='logo' className='w-9 h-9 object-contain hover:scale-125' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex'>
             Ajaykumar Saini &nbsp;
-            <span className='sm:block hidden'> | Portfolio</span>
           </p>
         </Link>
 
