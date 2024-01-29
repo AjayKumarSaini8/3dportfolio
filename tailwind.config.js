@@ -1,7 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{js,jsx}"],
-  mode: "jit",
+  content: [
+  "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+  "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+  "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+],
   theme: {
     extend: {
       colors: {
@@ -16,9 +19,9 @@ module.exports = {
         card: "0px 35px 120px -15px #211e35",
       },
       screens: {
-        sm: '576px',
-        md: '960px',
-        lg: '1440px',
+        vvs: "350px",
+        md: "700px",
+        lg: "1200px",
       },
     },
   },
