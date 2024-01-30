@@ -5,7 +5,6 @@ import emailjs from "@emailjs/browser";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
-import { AppWrap, SocialMedia } from ".";
 
 const Contact = () => {
   const formRef = useRef();
@@ -121,14 +120,6 @@ const Contact = () => {
             {loading ? "Sending..." : "Send"}
           </button>
         </form>
-      </motion.div>
-
-      <motion.div
-        variants={slideIn("left", "tween", 0.2, 0.1)}
-        className="flex overflow-hidden flex-col mt-12 gap-8"
-      >
-        <SocialMedia />
-        <AppWrap />
       </motion.div>
     </div>
   );

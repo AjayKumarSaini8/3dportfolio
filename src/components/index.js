@@ -1,23 +1,21 @@
-import { BallCanvas} from './canvas';
 import {StarsCanvas} from './canvas'
 import Hero from "./Hero";
 import Navbar from "./Navbar";
 import About from "./About";
-import Tech from "./Tech";
+import Skills from "./Skills";
 import Projects from "./Projects";
 import Contact from "./Contact";
 import SocialMedia from './SocialMedia';
-import AppWrap from './AppWrap';
+import Footer from './Footer';
 
 export {
   Hero,
   Navbar,
   SocialMedia,
-  AppWrap,
+  Footer,
   About,
-  Tech,
+  Skills,
   Projects,
   Contact,
-  BallCanvas,
   StarsCanvas
 };

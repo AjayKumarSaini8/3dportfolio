@@ -3,16 +3,6 @@ import {
   backend,
   creator,
   web,
-  javascript,
-  html,
-  python,
-  django,
-  mysql,
-  css,
-  reactjs,
-  redux,
-  tailwind,
-  git,
   carrent,
   jobit,
   tripguide,
@@ -63,48 +53,6 @@ const services = [
   },
 ];
 
-const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "Python",
-    icon: python,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Django",
-    icon: django,
-  },
-  {
-    name: "MySQL",
-    icon: mysql,
-  },
-  {
-    name: "git",
-    icon: git,
-  }
-];
 
 const projects = [
   {
@@ -235,4 +183,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, projects };
+export { services, projects };
