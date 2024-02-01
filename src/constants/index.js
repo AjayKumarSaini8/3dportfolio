@@ -40,7 +40,7 @@ const services = [
     icon: web,
   },
   {
-    title: "Data Science Enthusiast",
+    title: "Frontend Developer",
     icon: mobile,
   },
   {
@@ -48,11 +48,10 @@ const services = [
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Data Science Enthusiast",
     icon: creator,
   },
 ];
-
 
 const projects = [
   {

@@ -7,7 +7,7 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className='lg:w-[250px] md:w-[250px] w-full'>
+  <Tilt className='w-full md:w-1/2 lg:w-[250px]'>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className='w-full shadow-purple-900 hover:shadow-purple-500 rounded-[20px] shadow-card'
@@ -18,15 +18,15 @@ const ServiceCard = ({ index, title, icon }) => (
           scale: 1,
           speed: 450,
         }}
-        className='bg-blur bg-white-100/50 rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
+        className={`bg-blur bg-white-100/50 rounded-[20px] p-7 min-h-[200px] flex justify-evenly items-center flex-col py-5 px-12 
+          md:min-h-[280px]`}
       >
         <img
           src={icon}
           alt='web-development'
           className='w-16 h-16 object-contain'
         />
-
-        <h3 className='text-white text-[20px] font-bold text-center'>
+        <h3 className='text-white text-[20px] md:text-[15px] md:pl-0 md:w-20 font-bold text-center'>
           {title}
         </h3>
       </div>

@@ -1,23 +1,44 @@
+import { useEffect, useRef } from "react";
 import { styles } from "../styles";
 import { SocialMedia } from ".";
 import { SectionWrapper } from "../hoc";
+import Typed from 'typed.js'; // Import Typed.js
 
 const Hero = () => {
+
+  const typedRef1 = useRef(null);
+  const typedRef2 = useRef(null);
+
+  useEffect(() => {
+    // Initialize Typed.js when the component mounts
+    const options = {
+      strings: ['Turning Vision Into Reality With Code'],
+      typeSpeed: 50,
+    };
+    const typedInstance = new Typed('#autoType', options);
+
+    // Ensure to destroy Typed instance when the component unmounts
+    return () => {
+      typedInstance.destroy();
+    };
+  }, []); // Empty dependency array ensures the effect runs only once
 
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
-
-
         <div>
+
+
+          <span className={`${styles.heroSubText} text-gray-500`}>WELCOME TO MY WORLD</span>
+
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915EFF]'>Ajay</span>
+            Hi, I'm <span className='text-[#8247ff]'>Ajay</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I'm Web Developer <br className='sm:block ' />
-            <span className='text-[#915EFF]'>Turning Vision Into Reality With Code</span>
+            A Developer <br className='sm:block ' />
+            <span id="autoType" className='text-[#915EFF]'></span>
           </p>
           <a
             href='https://drive.google.com/file/d/1VrBtlUugA3JmuIOqWVUYerxsqwys2rBx/view?usp=sharing'

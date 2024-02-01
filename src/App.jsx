@@ -9,7 +9,7 @@ const App = () => {
         <Navbar />
         <Hero />
         <About />
-        <div className='relative z-0 bg-slate-950'>
+        <div className='relative z-0 bg-slate-950 pb-20'>
           <Skills />
         </div>
         <Projects />
