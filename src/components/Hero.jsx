@@ -3,6 +3,9 @@ import { styles } from "../styles";
 import { SocialMedia } from ".";
 import { SectionWrapper } from "../hoc";
 import Typed from 'typed.js'; // Import Typed.js
+import headerImg from "../assets/header-img.svg";
+import TrackVisibility from 'react-on-screen';
+import 'animate.css';
 
 const Hero = () => {
 
@@ -30,7 +33,6 @@ const Hero = () => {
       >
         <div>
 
-
           <span className={`${styles.heroSubText} text-gray-500`}>WELCOME TO MY WORLD</span>
 
           <h1 className={`${styles.heroHeadText} text-white`}>
@@ -50,6 +52,14 @@ const Hero = () => {
           </a>
           <SocialMedia />
         </div>
+      </div>
+      <div className="lg:flex lg:justify-end lg:items-center lg:h-full">
+        <TrackVisibility>
+          {({ isVisible }) =>
+            <div className={`lg:mt-0 mt-4 ${isVisible ? "animate__animated animate__zoomIn" : ""}`}>
+              <img src={headerImg} alt="Header Img" className="w-36 lg:w-96" />
+            </div>}
+        </TrackVisibility>
       </div>
     </section>
   );
