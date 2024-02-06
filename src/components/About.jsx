@@ -18,7 +18,7 @@ const ServiceCard = ({ index, title, icon }) => (
           scale: 1,
           speed: 450,
         }}
-        className={`bg-blur bg-white-100/50 rounded-[20px] p-7 min-h-[200px] flex justify-evenly items-center flex-col py-5 px-12 
+        className={`bg-blur bg-white-100/50 rounded-[20px] p-7 min-h-[200px] flex-row flex justify-evenly items-center sm:flex-col py-5 px-12 
           md:min-h-[280px]`}
       >
         <img
