@@ -57,7 +57,7 @@ const Hero = () => {
         <TrackVisibility>
           {({ isVisible }) =>
             <div className={`lg:mt-0 mt-4 ${isVisible ? "animate__animated animate__zoomIn" : ""}`}>
-              <img src={headerImg} alt="Header Img" className="w-36 lg:w-96" />
+              <img src={headerImg} alt="Header Img" className="w-36 lg:w-96 md:w-96 sm:w-96" />
             </div>}
         </TrackVisibility>
       </div>

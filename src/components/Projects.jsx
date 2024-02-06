@@ -6,7 +6,8 @@ import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
-import { fadeIn, textVariant } from "../utils/motion";
+import TrackVisibility from 'react-on-screen';
+import 'animate.css';
 
 const ProjectCard = ({
   index,
@@ -73,24 +74,36 @@ const Projects = () => {
   return (
     <>
       <div>
-        <p className={`${styles.sectionSubText} `}>My work</p>
-        <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
+        <TrackVisibility>
+          {({ isVisible }) =>
+            <div className={`lg:mt-0 mt-4 ${isVisible ? "animate__animated animate__zoomIn" : ""}`}>
+              <p className={`${styles.sectionSubText} `}>My work</p>
+              <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
+            </div>}
+        </TrackVisibility>
       </div>
 
       <div className="w-full flex">
-        <p
-          variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-secondary text-base sm:text-sm max-w-3xl"
-        >
-          Following projects showcase my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.
-        </p>
+        <TrackVisibility>
+          {({ isVisible }) =>
+            <div className={`lg:mt-0 mt-4 ${isVisible ? "animate__animated animate__zoomIn" : ""}`}>
+              <p className="mt-3 text-secondary text-base sm:text-sm max-w-3xl">
+                Following projects showcase my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.
+              </p>
+            </div>}
+        </TrackVisibility>
       </div>
 
-      <div className="mt-10 sm:mt-20 flex flex-wrap gap-4 sm:gap-7">
-        {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
-        ))}
-      </div>
+      <TrackVisibility>
+        {({ isVisible }) =>
+          <div className={`lg:mt-0 mt-4 ${isVisible ? "animate__animated animate__zoomIn" : ""}`}>
+            <div className="mt-10 sm:mt-20 flex flex-wrap gap-4 sm:gap-7">
+              {projects.map((project, index) => (
+                <ProjectCard key={`project-${index}`} index={index} {...project} />
+              ))}
+            </div>
+          </div>}
+      </TrackVisibility>
     </>
   );
 };
