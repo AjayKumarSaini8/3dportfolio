@@ -17,7 +17,7 @@ const Footer = () => {
                 </div>
                 <div className="flex items-center">
                     <FaEnvelope className="ml-2 md:ml-4" /> &nbsp;
-                    <span className="inline-block tracking-wider"> sainiajaykumar716@gmail.com</span>
+                    <span className="inline-block tracking-wider"> aksaini0875@gmail.com</span>
                 </div>
             </div>
             <br />
